@@ -1,0 +1,24 @@
+.btn-1 {
+	color: white;
+	height: 50px;
+	width: 220px;
+	border-radius: 25px;
+	border-style: none;
+	user-select: none;
+	cursor: pointer;
+	background-color: #578cd6;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.btn-2 {
+	color:white;
+	height: 30px;
+	width: 120px;
+	border-radius: 50px;
+	border-style: none;
+	user-select: none;
+	cursor: pointer;
+	background-color: #111;
+	font-size: 1rem;
+}
