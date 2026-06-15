@@ -1,52 +1,65 @@
-body {
-	background-color: #eae7e3;
-	padding: 0;
-	margin: 0;
-}
-
-main {
-	min-height: 100vh;
-}
-
-.landing {
-	height: 50vh;
-	width: 100vw;
-	gap: 30px;
-	/* background-color: red; */
-}
-
-#landing-text {
-	margin-top:15rem;
-	padding-left:40px;
-	gap:30px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	}
-
 .heading-1 {
-	font-family: 'Instrument Serif';
+	font-family: 'Instrument Serif', serif;
 	font-weight: 300;
 	font-size: 6rem;
 }
 
 .heading-2 {
-	font-family: 'Manrope';
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 700;
 	font-size: 1rem;
 }
 
-#links {
-	gap: 1rem;
+.heading-3 {
+	letter-spacing: -1.5px;
+}
+
+.landing {
+	min-height: 100vh;
+	display:flex;
+	align-items:center;
+	gap: 30px;
+	/* background-color: red; */
+}
+
+.landing header {
+	padding-left:40px;
+	gap:30px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content:center;
+}
+
+.landing header h1 {
+	color: #55657a;
+	font-size: 7rem;
+	letter-spacing: -4px;
+}
+
+.cta-1 {
+	color: white;
+	width:250px;
+	height: 40px;
+	gap: 0.4rem;
+	border-radius: 30px;
+	font-weight:500;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition: 0.15s ease;
+	background-color: #6683a8;
+}
+
+.cta-1:hover {
+	background-color: #203f68;
+
 }
 
 #links span {
 	text-decoration: underline;
 	text-underline-offset: 2px;
 }
-
 
  
 #learn-more {
@@ -67,32 +80,48 @@ main {
 	align-items:center;
 	text-align:center;
 }
-.banner ul {
-	display:flex;
-	flex-direction:row;
-	gap:150px;
-	list-style-type: none;
-}
 
-.banner ul li img{
-	width:150px;
-	height:150px;
-	opacity:30%;
-	filter: brightness(0);
-	user-select: none;
-}
-.banner h3 {
-	font-size: 1.2rem;
-	opacity: 40%;
-}
-
-#services {
+#services-container{
 	min-height:100vh;
 	display: flex;
-	justify-content:center;
+	flex-direction: column;
 	text-align:center;
 }
 
-#services h1 {
-	margin-top: 6rem;
+.services {
+	margin-left:20rem;
+	margin-right:20rem;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+}
+
+.services img {
+	width: 150px;
+	height: 150px;
+}
+.services ul {
+	list-style-type:none;
+}
+
+.services ul li {
+	text-align: start;
+	font-size: 2rem;
+	font-family: 'DM Sans', sans-serif;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+}
+
+/* Desktop / widescreen */
+@media (min-width: 1024px) {
+
+}
+
+/* Large widescreen */
+@media (min-width: 1440px) {
+
 }

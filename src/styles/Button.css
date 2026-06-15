@@ -7,6 +7,7 @@
 	user-select: none;
 	cursor: pointer;
 	background-color: #578cd6;
+	font-family: 'DM Sans', sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 }
@@ -20,5 +21,6 @@
 	user-select: none;
 	cursor: pointer;
 	background-color: #111;
+	font-family: 'DM Sans', sans-serif;
 	font-size: 1rem;
 }
