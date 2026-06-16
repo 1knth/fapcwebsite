@@ -1,13 +1,15 @@
 
 
-function Pricing() {
+function About() {
 	return (
 		<main className='min-h-screen py-20 flex flex-col items-center'>
 			<section >
-				<header className='heading-1'> Pricing </header>
+				<header >
+					<h1 className='heading-1'>Our Story</h1>
+				</header>
 			</section>
 		</main>
 	)
 }
 
-export default Pricing
+export default About

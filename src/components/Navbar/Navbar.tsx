@@ -1,20 +1,23 @@
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
-import { FiArrowUpRight } from "react-icons/fi"
+import { RiArrowRightUpLine } from "react-icons/ri";
+
 
 function Navbar() {
 	return (
 		<nav className="navbar">
-			<h1 className="text1">FINANCIAL AGENCY<br/> <span>Professional Corporation</span></h1>
+			<div>
+				<h1 className="text1">FINANCIAL AGENCY<br/> <span>Professional Corporation</span></h1>
+			</div>
 
-			<ul className='text-lg'>
-				<li><Link to='/us'>Our Team</Link></li>
-				<li><a href="#services-container">Services</a></li>
+			<ul className='text-xl'>
+				<li><Link to='/us'>About Us</Link></li>
+				<li><a href="#services">Services</a></li>
 				<li><Link to="/pricing">Pricing</Link></li>
 				<li>
-					<button className="btn-2">
-						<span>Enterprise</span>
-						<FiArrowUpRight />
+					<button className="-center bg-black text-center text-white px-4 py-2 rounded-4xl cursor-pointer">
+						<span className='text-xl'>Enterprise</span>
+						<RiArrowRightUpLine />
 					</button>
 				</li>
 			</ul>
