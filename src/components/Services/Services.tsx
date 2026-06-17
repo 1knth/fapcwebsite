@@ -18,9 +18,9 @@ function Services() {
 
 	return (
 		<section id='services-container' className='min-h-screen px-4 py-50 md:px-8 lg:px-12'>
-			<header className='mx-auto flex w-full max-w-7xl flex-col items-center gap-10 md:gap-16'>
+			<header id='services' className='mx-auto flex w-full max-w-7xl flex-col items-center gap-10 md:gap-16'>
 				<h1 className='heading-1 text-center'>What we do best</h1>
-				<div id='services' className='flex w-full flex-col items-center gap-8 lg:flex-row lg:items-stretch'>
+				<div  className='flex w-full flex-col items-center gap-8 lg:flex-row lg:items-stretch'>
 					<div className='aspect-square w-full max-w-md overflow-hidden rounded-3xl bg-[#9aa9bb] lg:w-[28rem] lg:max-w-none lg:flex-none'>
 						<img src={tax} alt='Financial services logo' className='h-full w-full object-cover' />
 					</div>
