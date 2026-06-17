@@ -17,10 +17,10 @@ function Navbar() {
 				<li><Link to="/#services">Services</Link></li>
 				<li><Link to="/pricing">Pricing</Link></li>
 				<li>
-					<button className="bg-black text-center text-white px-4 py-1.5 rounded-4xl cursor-pointer">
-						<span className='text-xl '>Contact</span>
+					<Link to='/book' className='nav-button bg-black text-white w-30 px-4 py-1.5 rounded-4xl cursor-pointer'>
+						<span className='text-xl'>Contact</span>
 						<RiArrowRightUpLine />
-					</button>
+					</Link>
 				</li>
 			</ul>
 

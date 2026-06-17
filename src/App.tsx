@@ -7,20 +7,24 @@ import Pricing from './pages/Pricing.tsx';
 import About from './pages/About.tsx';
 import Navbar from './components/Navbar/Navbar.tsx';
 import Footer from './components/Footer.tsx';
+import Book from './pages/Book.tsx';
 
-function ScrollToHash() {
+function ScrollHandler() {
 	const location = useLocation()
 
 	useEffect(() => {
-		if (!location.hash) return
-
-		const id = decodeURIComponent(location.hash.replace('#', ''))
 		const timeout = window.setTimeout(() => {
-			document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+			if (location.hash) {
+				const id = decodeURIComponent(location.hash.replace('#', ''))
+				document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+				return
+			}
+
+			window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
 		}, 0)
 
 		return () => window.clearTimeout(timeout)
-	}, [location])
+	}, [location.pathname, location.hash])
 
 	return null
 }
@@ -29,7 +33,7 @@ function App() {
 
   return (
 			<BrowserRouter>
-				<ScrollToHash />
+				<ScrollHandler />
 				<Navbar/>
 				<div className="App">
 					<header className="router-container">
@@ -37,6 +41,7 @@ function App() {
 							<Route path="/" element={<Home />} />
 							<Route path="/pricing" element={<Pricing />} />
 							<Route path="/us" element={<About />} />
+							<Route path="/book" element={<Book />} />
 						</Routes>
 					</header>
 				</div>

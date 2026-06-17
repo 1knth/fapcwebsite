@@ -41,7 +41,7 @@
 	cursor: pointer;
 }
 
-.navbar li a {
+.navbar li a:not(.nav-button) {
 	position: relative;
 	display: inline-block;
 	line-height: 1;
@@ -49,7 +49,7 @@
 	color: inherit;
 }
 
-.navbar li a::after {
+.navbar li a:not(.nav-button)::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -64,14 +64,14 @@
 	backface-visibility: hidden;
 }
 
-.navbar li a:hover::after,
-.navbar li a:focus-visible::after {
+.navbar li a:not(.nav-button):hover::after,
+.navbar li a:not(.nav-button):focus-visible::after {
 	transform: translateZ(0) scaleX(1);
 }
 
-.navbar button {
+.nav-button {
 	justify-self: end;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -80,17 +80,18 @@
 	transition: 0.15s ease;
 }
 
-.navbar button:hover {
+.nav-button:hover {
 	background-color:#c1c1c1;
 	color: black;
 }
 
-.navbar button span {
+.nav-button span {
 	display: inline-flex;
 	align-items: center;
 	line-height: 1;
 }
-.navbar button svg {
+
+.nav-button svg {
 	display: block;
 	flex-shrink: 0;
 }

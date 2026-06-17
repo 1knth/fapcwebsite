@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 type PricingCardProps = {
+
 	title: string
 	price: string
 	description: string

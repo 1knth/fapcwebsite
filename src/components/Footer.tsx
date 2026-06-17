@@ -30,9 +30,8 @@ function Footer() {
 
 					<div className='flex flex-col gap-3 tracking-tighter sm:col-span-2 lg:col-span-1'>
 						<h2 className='text-2xl font-semibold md:text-3xl'>Connect</h2>
-						<Link className='text-lg opacity-70 transition hover:opacity-100 md:text-2xl' to='/#services'>Contact Us</Link>
-						<Link className='text-lg opacity-70 transition hover:opacity-100 md:text-2xl' to='/#services'>Speak to Sales</Link>
-						<a className='text-lg opacity-70 transition hover:opacity-100 md:text-2xl' href='tel:4166148046'>(416) 614-8046</a>
+						<Link className='text-lg opacity-70 transition hover:opacity-100 md:text-2xl' to='/book'>Contact Us</Link>
+						<a className='text-lg opacity-70 transition hover:opacity-100 md:text-2xl' href='tel:4166148046'>Tel: (416) 614-8046</a>
 					</div>
 				</div>
 
