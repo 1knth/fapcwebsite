@@ -28,10 +28,6 @@ function About() {
 					<img src={storeimg} alt='Financial Agency storefront' />
 				</figure>
 			</section>
-
-			<section className='mx-auto mt-24 w-full max-w-7xl'>
-				<h1 className='heading-1 text-left text-slate-800'>Our Team</h1>
-			</section>
 		</main>
 	)
 }

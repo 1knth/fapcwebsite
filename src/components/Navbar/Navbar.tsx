@@ -1,7 +1,7 @@
 import "./Navbar.css"
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { RiArrowRightUpLine } from "react-icons/ri";
+import { RiArrowRightUpLine } from "react-icons/ri"
 
 
 function Navbar() {
@@ -34,9 +34,9 @@ function Navbar() {
 
 	return (
 		<nav className={`navbar tracking-tight ${isScrolled ? 'scrolled' : ''}`}>
-			<div className='w-fit'>
-				<Link to='/' className='inline-block w-fit'>
-					<h1 className='font-semibold'>FINANCIAL AGENCY<br/> <span className='font-light opacity-50'>Professional Corporation</span></h1>
+			<div className='w-fit h-fit'>
+				<Link to='/' className=' w-fit'>
+					<h1 className='font-semibold select-none'>FAPC</h1>
 				</Link>
 			</div>
 
