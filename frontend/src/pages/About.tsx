@@ -25,7 +25,7 @@ function About() {
 				</header>
 
 				<figure className='about-film-image'>
-					<img src={storeimg} alt='Financial Agency storefront' />
+					<img loading="lazy" src={storeimg} alt='Financial Agency storefront' />
 				</figure>
 			</section>
 		</main>

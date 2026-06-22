@@ -8,6 +8,7 @@ import About from './pages/About.tsx';
 import Navbar from './components/Navbar/Navbar.tsx';
 import Footer from './components/Footer.tsx';
 import Book from './pages/Book.tsx';
+import ServiceDetail from './pages/ServiceDetail.tsx';
 
 function ScrollHandler() {
 	const location = useLocation()
@@ -42,6 +43,7 @@ function App() {
 							<Route path="/pricing" element={<Pricing />} />
 							<Route path="/us" element={<About />} />
 							<Route path="/book" element={<Book />} />
+							<Route path="/services/:slug" element={<ServiceDetail />} />
 						</Routes>
 					</header>
 				</div>
