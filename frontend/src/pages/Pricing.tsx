@@ -54,38 +54,35 @@ function Pricing() {
 				<header className='flex flex-col items-center gap-5 text-center'>
 					<h1 className='heading-1'>Pricing</h1>
 					<p className='max-w-3xl text-md leading-relaxed text-slate-700 md:text-xl'>
-						Transparent pricing for individuals, entrepreneurs, and growing businesses who want reliable financial support.
+						Transparent pricing built around your needs — whether you're just starting out or scaling up.
 					</p>
 				</header>
 
 				<section className='grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3'>
 					<PricingCard
 						title='Personal'
-						price='~$150'
+						price='~$150/file'
 						// description='Straightforward personal tax support for individuals and families who want clarity and confidence at filing time.'
 						description='*All prices displayed are estimates.'
 						features={[
 							'T1 filing and review',
 							'Deductions and credits check',
-							'Email support for follow-up questions',
 						]}
 					/>
 					<PricingCard
-						title='Corporate/SMB'
-						price='~$1500/mo'
+						title='Corporate'
+						price='~$1500/file'
 						// description='Ongoing bookkeeping and tax support for owner-operators and growing teams that need consistent financial visibility.'
 						description='*All prices displayed are estimates.'
 						features={[
-							'Monthly bookkeeping and reconciliations',
-							'Year-round tax planning guidance',
-							'Clear monthly reporting',
+							'Corporate Tax',
 						]}
 					/>
 					<PricingCard
 						title='Enterprise / Custom'
 						price='Custom quote'
 						// description='Tailored support for more complex organizations that need a custom mix of advisory, payroll, and compliance services.'
-						description='*All prices displayed are estimates.'
+						description=''
 						features={[
 							'Custom engagement scope',
 							'Payroll and sales tax support',
